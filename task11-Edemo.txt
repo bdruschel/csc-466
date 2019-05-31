@@ -1,0 +1,51 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task XI ENCAPSULATED Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (individual-demo)
+Individual 0 || Fitness 2
+  (((2 0 *) UR) ((4 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DL) ((4 3 *) L) ((1 1 *) DL) ((3 3 *) UL) ((3 0 *) R) ((0 0 *) DR) ((2 2 *) DL) ((4 2 *) L))
+Individual 1 || Fitness 4
+  (((2 0 *) UR) ((4 0 *) UR) ((3 2 *) L) ((3 0 *) UR) ((2 2 *) L) ((1 0 *) DL) ((4 4 *) UL) ((1 1 *) DR) ((4 2 *) L) ((4 0 *) UR))
+Individual 2 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 4 *) L) ((2 2 *) DR) ((2 0 *) R) ((4 1 *) R) ((4 3 *) UL) ((1 1 *) DL) ((4 0 *) UR) ((2 0 *) DR))
+Individual 3 || Fitness 4
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((4 1 *) UR) ((4 2 *) UR) ((2 2 *) L) ((4 4 *) L) ((0 0 *) DR) ((2 0 *) UR) ((4 0 *) UR))
+Fitness of i0 = 2
+Fitness of i1 = 4
+Fitness of i2 = 4
+Fitness of i3 = 4
+NIL
+[3]> (individual-demo)
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 3 *) L) ((4 0 *) R) ((3 0 *) UR) ((1 0 *) DR) ((3 2 *) L) ((1 1 *) DR) ((4 3 *) L) ((4 4 *) UL))
+Individual 1 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((0 0 *) DL) ((2 2 *) DL) ((1 1 *) DL) ((4 4 *) UL) ((4 1 *) UR) ((4 3 *) L) ((4 0 *) R))
+Individual 2 || Fitness 4
+  (((2 0 *) UR) ((4 0 *) UR) ((3 2 *) UL) ((4 2 *) L) ((1 0 *) DL) ((3 0 *) R) ((4 3 *) UL) ((1 1 *) DL) ((3 3 *) UL) ((0 0 *) DR))
+Individual 3 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 3 *) UL) ((2 0 *) R) ((4 1 *) UR) ((4 0 *) UR) ((1 1 *) DL) ((3 3 *) UL) ((0 0 *) DR))
+Fitness of i0 = 4
+Fitness of i1 = 4
+Fitness of i2 = 4
+Fitness of i3 = 5
+NIL
+[4]> (individual-demo)
+Individual 0 || Fitness 4
+  (((2 2 *) UL) ((4 2 *) UR) ((4 4 *) L) ((1 0 *) DR) ((3 3 *) UL) ((4 2 *) UR) ((2 0 *) DR) ((4 0 *) UR) ((4 2 *) L) ((1 1 *) DR))
+Individual 1 || Fitness 3
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 3 *) L) ((2 1 *) DR) ((4 0 *) R) ((2 0 *) DL) ((4 4 *) UL) ((4 3 *) L) ((4 0 *) R) ((1 1 *) DR))
+Individual 2 || Fitness 6
+  (((2 0 *) UR) ((4 0 *) UR) ((3 2 *) L) ((4 2 *) L) ((1 1 *) DL) ((3 0 *) R) ((3 3 *) L) ((4 4 *) L))
+Individual 3 || Fitness 4
+  (((2 2 *) UL) ((2 0 *) R) ((4 0 *) UR) ((3 2 *) L) ((3 3 *) UL) ((4 2 *) L) ((4 4 *) L) ((0 0 *) DR) ((2 0 *) UR) ((4 0 *) UR))
+Fitness of i0 = 4
+Fitness of i1 = 3
+Fitness of i2 = 6
+Fitness of i3 = 4
+NIL
+[5]> (bye)
+Bye.

@@ -1,0 +1,55 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task XIII INTERACIVE Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (setf i (random-individual) )
+#<INDIVIDUAL #x1A926B05>
+[3]> (display i)
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((4 0 *) R) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+NIL
+[4]> (display (mutate i))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((2 0 *) DL) ((0 0 *) DL) ((4 3 *) L) ((2 2 *) UL) ((4 4 *) UL) ((4 0 *) R))
+NIL
+[5]> (display i)
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((4 0 *) R) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+NIL
+[6]> (display (mutate i))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL) ((4 0 *) R))
+NIL
+[7]> (display i)
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((4 0 *) R) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+NIL
+[8]> (display (maybe-mutate i))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DL) ((4 3 *) L) ((2 2 *) L) ((2 0 *) DL) ((0 0 *) DR) ((4 0 *) R))
+NIL
+[9]> (display (maybe-mutate i))
+Individual 0 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((2 2 *) DL) ((1 1 *) DL) ((3 0 *) R) ((4 4 *) UL) ((4 3 *) UL) ((4 1 *) R))
+NIL
+[10]> (display (maybe-mutate i))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((4 0 *) R) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+NIL
+[11]> (display (maybe-mutate i))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((2 0 *) DL) ((0 0 *) DL) ((4 3 *) L) ((4 0 *) R) ((2 2 *) UL) ((4 4 *) UL))
+NIL
+[12]> (display (maybe-mutate i))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((4 0 *) R) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+NIL
+[13]> (display (maybe-mutate i))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((2 0 *) DL) ((0 0 *) DL) ((4 3 *) L) ((2 2 *) UL) ((4 0 *) R) ((4 4 *) UL))
+NIL
+[14]> (bye)
+Bye.

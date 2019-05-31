@@ -1,0 +1,55 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task VIII Demo)
+;; Author: Brandon Druschel
+
+;; NOTE: "mutate-help: NO MORE AVAILABLE MOVES." Is a debug string that
+;; indicating that no more additional moves can be done on the board. 
+;; In other words, the mutation itself has reached the endgame state. 
+
+;; The resulting mutation tries to keep the mutated set of moves the same
+;; length as the original play, but since there's a good chance the mutation
+;; itself may result in the play ending prematurely, the debug string simply
+;; tells the user that the shortened play isn't abnormal.
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> ( setf p (play-full) )
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((3 3 *) L) ((3 0 *) R) ((1 1 *) DR) ((4 0 *) R) ((3 3 *) L)
+ ((4 2 *) UL))
+[3]> ( setf p (mutate p) )
+mutate-help: NO MORE AVAILABLE MOVES.
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((4 0 *) UR) ((3 3 *) L) ((2 0 *) DR) ((1 1 *) DR) ((4 2 *) L)
+ ((4 4 *) UL))
+[4]> ( setf p (mutate p) )
+mutate-help: NO MORE AVAILABLE MOVES.
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((4 0 *) UR) ((3 3 *) L) ((2 0 *) DR) ((1 1 *) DR) ((4 4 *) UL)
+ ((4 1 *) R))
+[5]> ( setf p (mutate p) )
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((4 0 *) UR) ((3 3 *) L) ((1 1 *) DR) ((4 1 *) UR) ((2 0 *) R)
+ ((3 3 *) UL))
+[6]> ( setf p (mutate p) )
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((4 0 *) UR) ((3 3 *) L) ((1 1 *) DR) ((4 1 *) UR) ((2 0 *) R)
+ ((3 3 *) UL))
+[7]> ( setf p (mutate p) )
+mutate-help: NO MORE AVAILABLE MOVES.
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((4 0 *) UR) ((3 3 *) L) ((1 1 *) DR) ((4 1 *) UR)
+ ((4 4 *) UL))
+[8]> ( setf p (mutate p) )
+mutate-help: NO MORE AVAILABLE MOVES.
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((4 0 *) UR) ((3 3 *) L) ((1 1 *) DR) ((4 1 *) UR)
+ ((4 4 *) UL))
+[9]> ( setf p (mutate p) )
+mutate-help: NO MORE AVAILABLE MOVES.
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((4 0 *) UR) ((3 3 *) L) ((1 1 *) DR) ((4 1 *) UR)
+ ((4 4 *) UL))
+[10]> ( setf p (mutate p) )
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((3 3 *) L) ((1 1 *) DR) ((4 0 *) UR) ((4 4 *) UL)
+ ((2 0 *) DR))
+[11]> ( setf p (mutate p) )
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((4 3 *) L) ((1 0 *) DR) ((4 0 *) R) ((3 3 *) L) ((3 0 *) R) ((1 1 *) DR) ((3 3 *) L))
+[12]> ( setf p (mutate p) )
+(((2 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((4 3 *) L) ((4 0 *) UR) ((1 1 *) DL) ((3 3 *) UL) ((1 0 *) DL) ((4 1 *) UR)
+ ((0 0 *) DR))
+[13]> (bye)
+Bye.

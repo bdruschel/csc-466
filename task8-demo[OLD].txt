@@ -1,0 +1,24 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task VIII Demo)
+;; Author: Brandon Druschel
+
+; NOTE: 'play' method now records a random series of moves, instead of 
+; generating a random list of directions
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (setf p (play 8) )
+(((2 0 *) UR) ((4 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DL) ((4 3 *) L) ((1 1 *) DL)
+ ((3 3 *) UL))
+[3]> ( mutate p )
+(((2 0 *) UR) ((4 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DL) ((2 2 *) L) ((2 0 *) DL)
+ ((4 3 *) L))
+[4]> ( mutate p )
+(((2 0 *) UR) ((4 0 *) UR) ((4 2 *) L) ((3 2 *) L) ((3 0 *) UR) ((0 0 *) DL) ((4 4 *) L)
+ ((2 2 *) UL))
+[5]> ( mutate p )
+(((2 0 *) UR) ((4 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 1 *) DL) ((3 3 *) UL) ((1 0 *) DL)
+ ((4 2 *) UL))
+[6]> (bye)
+Bye.

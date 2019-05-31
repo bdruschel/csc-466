@@ -1,0 +1,51 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task VII Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (visualize)
+-- GAME BOARD--
+    O
+   * *
+  * * *
+ * * * *
+* * * * *
+NIL
+[3]> (goalp)
+NIL
+[4]> (failp *board*)
+NIL
+[5]> (good-ending) ;; NOTE: Changes *board* so only one peg remains
+((0 0 O) (1 0 O) (1 1 O) (2 0 O) (2 1 O) (2 2 O) (3 0 *) (3 1 O) (3 2 O) (3 3 O) (4 0 O) (4 1 O)
+ (4 2 O) (4 3 O) (4 4 O))
+[6]> (visualize)
+-- GAME BOARD--
+    O
+   O O
+  O O O
+ * O O O
+O O O O O
+NIL
+[7]> (failp *board*)
+NIL
+[8]> (goalp)
+T
+[9]> (bad-ending) ;; NOTE: Changes *board* so 2+ pegs w/ no possible moves remain
+((0 0 *) (1 0 O) (1 1 O) (2 0 O) (2 1 O) (2 2 O) (3 0 O) (3 1 O) (3 2 O) (3 3 O) (4 0 *) (4 1 O)
+ (4 2 O) (4 3 O) (4 4 *))
+[10]> (visualize)
+-- GAME BOARD--
+    *
+   O O
+  O O O
+ O O O O
+* O O O *
+NIL
+[11]> (failp *board*)
+T
+[12]> (goalp)
+NIL
+[13]> (bye)
+Bye.

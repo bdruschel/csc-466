@@ -1,0 +1,168 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task XVI "Separation" Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (ga-demo-sep)
+TRACKING FITNESS VIA PEG SEPARATION
+
+|         / \       |
+|  0     / * \      |
+|  1    / O O \     |
+|  2   / * O * \    |
+|  3  / O O O O \   |
+|  4 / O O * O O \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+|         / \       |
+|  0     / * \      |
+|  1    / O O \     |
+|  2   / O O * \    |
+|  3  / O O O O \   |
+|  4 / O O * O * \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+|         / \       |
+|  0     / * \      |
+|  1    / O O \     |
+|  2   / * O O \    |
+|  3  / O O O O \   |
+|  4 / O O O O * \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+|         / \       |
+|  0     / O \      |
+|  1    / O O \     |
+|  2   / O O * \    |
+|  3  / O O O O \   |
+|  4 / * O * O O \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+|         / \       |
+|  0     / * \      |
+|  1    / O O \     |
+|  2   / * O O \    |
+|  3  / O O O O \   |
+|  4 / O O O O * \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+|         / \       |
+|  0     / * \      |
+|  1    / O O \     |
+|  2   / O O O \    |
+|  3  / O O O * \   |
+|  4 / O O * O O \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+|         / \       |
+|  0     / O \      |
+|  1    / O O \     |
+|  2   / * O O \    |
+|  3  / O O O O \   |
+|  4 / O O * O * \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+|         / \       |
+|  0     / O \      |
+|  1    / O O \     |
+|  2   / * O O \    |
+|  3  / O O O O \   |
+|  4 / O O * O * \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+|         / \       |
+|  0     / * \      |
+|  1    / O O \     |
+|  2   / * O O \    |
+|  3  / O O O * \   |
+|  4 / O O O * O \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+|         / \       |
+|  0     / * \      |
+|  1    / O O \     |
+|  2   / O O * \    |
+|  3  / O O O O \   |
+|  4 / O O * O * \  |
+|    -------------  |
+ _ _ _ _ _ _ _ _ _ _
+
+
+
+
+Generation 0 population...
+
+Individual 1 || Fitness 175
+  NIL
+Individual 2 || Fitness 16
+  (((2 0 *) UR) ((4 2 *) UL) ((3 3 *) L) ((3 0 *) R) ((2 2 *) DL) ((1 1 *) DL) ((4 1 *) UR) ((2 0 *) R) ((4 3 *) L) ((4 0 *) R))
+Individual 3 || Fitness 10
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((4 0 *) UR) ((4 2 *) L) ((2 0 *) DR) ((0 0 *) DL) ((4 3 *) L) ((4 0 *) R) ((4 2 *) UR) ((2 2 *) UL))
+Individual 4 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((3 1 *) R) ((4 4 *) L) ((2 2 *) DR) ((0 0 *) DR) ((4 1 *) R) ((4 4 *) L))
+Individual 5 || Fitness 10
+
+(((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((4 0 *) UR) ((4 2 *) UR) ((4 1 *) UR) ((1 0 *) DL) ((1 1 *) DL) ((3 0 *) R) ((4 3 *) UL)
+ ((2 2 *) L))
+Individual 6 || Fitness 8
+  (((2 0 *) UR) ((2 2 *) L) ((4 4 *) UL) ((4 3 *) UL) ((1 1 *) DR) ((3 0 *) R) ((4 1 *) R) ((2 0 *) R) ((2 2 *) DL) ((4 3 *) L) ((4 0 *) R))
+Individual 7 || Fitness 8
+
+(((2 2 *) UL) ((3 1 *) UR) ((4 4 *) UL) ((1 1 *) DR) ((4 2 *) UR) ((4 0 *) R) ((4 3 *) L) ((2 2 *) DR) ((2 0 *) DL) ((4 0 *) R)
+ ((0 0 *) DL))
+Individual 8 || Fitness 8
+  (((2 0 *) UR) ((2 2 *) L) ((4 3 *) UL) ((3 0 *) R) ((3 2 *) UL) ((0 0 *) DR) ((4 1 *) R) ((4 4 *) L) ((1 0 *) DL) ((4 0 *) UR) ((2 2 *) DR))
+Individual 9 || Fitness 16
+  (((2 2 *) UL) ((4 2 *) UR) ((3 0 *) R) ((3 3 *) L) ((4 4 *) L) ((3 1 *) UR) ((1 1 *) DR) ((1 0 *) DL) ((4 1 *) R) ((4 0 *) UR))
+Individual 10 || Fitness 16
+  (((2 2 *) UL) ((3 1 *) UR) ((3 3 *) L) ((0 0 *) DR) ((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((4 3 *) L) ((2 0 *) DL) ((4 0 *) R))
+
+Average fitness of population 0 = 27.3
+
+Average fitness of population 1 = 16.1
+Average fitness of population 2 = 14.4
+Average fitness of population 3 = 9.8
+Average fitness of population 4 = 8.3
+Average fitness of population 5 = 8.3
+
+
+
+Generation 5 population...
+
+Individual 1 || Fitness 19
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((4 4 *) L) ((4 1 *) UR) ((1 1 *) DR) ((4 2 *) UR) ((2 2 *) DR))
+Individual 2 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((3 1 *) R) ((4 4 *) L) ((2 2 *) DR) ((0 0 *) DR) ((4 1 *) R) ((4 4 *) L))
+Individual 3 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((4 4 *) L) ((4 1 *) R) ((4 3 *) UL) ((2 2 *) L) ((2 0 *) DR) ((0 0 *) DR))
+Individual 4 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((3 1 *) R) ((4 4 *) L) ((4 1 *) R) ((2 2 *) DR) ((4 4 *) L) ((0 0 *) DR))
+Individual 5 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((4 4 *) L) ((4 1 *) R) ((4 3 *) UL) ((2 2 *) L) ((0 0 *) DR) ((2 0 *) DR))
+Individual 6 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((3 1 *) R) ((4 4 *) L) ((2 2 *) DR) ((0 0 *) DR) ((4 1 *) R) ((4 4 *) L))
+Individual 7 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((3 1 *) R) ((4 4 *) L) ((4 1 *) R) ((2 2 *) DR) ((0 0 *) DR) ((4 4 *) L))
+Individual 8 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((3 1 *) R) ((4 4 *) L) ((2 2 *) DR) ((4 1 *) R) ((4 4 *) L) ((0 0 *) DR))
+Individual 9 || Fitness 6
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((3 1 *) R) ((4 4 *) L) ((4 1 *) R) ((2 2 *) DR) ((0 0 *) DR) ((4 4 *) L))
+Individual 10 || Fitness 16
+  (((2 0 *) UR) ((4 2 *) UL) ((3 0 *) UR) ((3 3 *) L) ((1 0 *) DR) ((4 4 *) L) ((4 1 *) R) ((1 1 *) DR) ((3 2 *) L) ((4 0 *) UR))
+
+Average fitness of population 5 = 8.3
+
+NIL
+[3]> (bye)
+Bye.

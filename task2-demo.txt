@@ -1,0 +1,23 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task II Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (pick)
+DL
+[3]> (pick)
+UL
+[4]> (pick)
+R
+[5]> (pick)
+DL
+[6]> (play 5)
+(L R R R UR)
+[7]> (play 12)
+(R DR UR UR DL L R DL UL UR UR UR)
+[8]> (play 30)
+(DL UR DR UL L DL UR UR DL L DL UR DL R DL DL L UR R UR UR DL UR UL UR L UL L R UR)
+[9]> (bye)
+Bye.

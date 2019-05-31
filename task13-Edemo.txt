@@ -1,0 +1,185 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task XIII ENCAPSULATED Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (mutate-demo)
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((4 0 *) R) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((2 0 *) DL) ((0 0 *) DL) ((4 3 *) L) ((2 2 *) UL) ((4 4 *) UL) ((4 0 *) R))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((2 0 *) DL) ((4 3 *) L) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL) ((4 0 *) R))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((2 0 *) DL) ((4 3 *) L) ((4 0 *) R) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((4 0 *) R) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((0 0 *) DL) ((4 0 *) R) ((2 2 *) UL) ((4 4 *) UL))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL) ((4 0 *) R))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((4 3 *) L) ((2 0 *) DL) ((0 0 *) DL) ((4 0 *) R) ((2 2 *) UL) ((4 4 *) UL))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 0 *) R) ((3 2 *) UL) ((2 0 *) DL) ((0 0 *) DL) ((4 3 *) L) ((2 2 *) UL) ((4 0 *) R) ((4 4 *) UL))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 2 *) UL) ((4 0 *) R) ((2 0 *) DL) ((4 3 *) L) ((0 0 *) DL) ((2 2 *) UL) ((4 0 *) R) ((4 4 *) UL))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 2 *) UL) ((4 0 *) R) ((2 0 *) DL) ((4 3 *) L) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL) ((4 0 *) R))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 2 *) UL) ((4 0 *) R) ((2 0 *) DL) ((0 0 *) DL) ((2 2 *) UL) ((4 3 *) L) ((4 0 *) R) ((4 4 *) UL))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 2 *) UL) ((4 0 *) R) ((2 0 *) DL) ((4 3 *) L) ((4 0 *) R) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DR) ((4 3 *) L) ((3 3 *) L) ((4 1 *) UR) ((1 1 *) DL) ((2 0 *) DR))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 0 *) UR) ((4 2 *) L) ((2 0 *) DR) ((3 3 *) L) ((4 2 *) UL) ((1 1 *) DL) ((2 0 *) DR) ((4 3 *) L) ((4 0 *) R))
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((4 0 *) UR) ((4 2 *) L) ((3 2 *) UL) ((1 0 *) DL) ((4 4 *) L) ((2 2 *) DR) ((0 0 *) DR) ((3 0 *) R))
+Individual 0 || Fitness 6
+  (((2 0 *) UR) ((4 0 *) UR) ((4 2 *) L) ((3 2 *) UL) ((1 0 *) DL) ((4 0 *) UR) ((2 0 *) DR) ((4 3 *) L))
+Individual 0 || Fitness 6
+  (((2 0 *) UR) ((4 0 *) UR) ((4 2 *) L) ((3 2 *) UL) ((2 0 *) DR) ((0 0 *) DL) ((2 2 *) UL) ((4 4 *) UL))
+Individual 0 || Fitness 6
+  (((2 0 *) UR) ((4 0 *) UR) ((4 2 *) L) ((3 2 *) UL) ((2 0 *) DR) ((0 0 *) DL) ((2 2 *) UL) ((4 3 *) L))
+Individual 0 || Fitness 6
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 4 *) UL) ((4 2 *) R) ((1 1 *) DL) ((2 0 *) DR) ((4 0 *) UR))
+Individual 0 || Fitness 6
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 4 *) UL) ((4 2 *) R) ((3 2 *) UL) ((1 1 *) DR) ((4 4 *) UL))
+NIL
+[3]> ( maybe-mutate-demo )
+Individual 0 || Fitness 3
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((2 0 *) UR) ((3 3 *) UL) ((4 0 *) UR) ((4 3 *) UL) ((2 0 *) R) ((4 2 *) L) ((1 1 *) DR) ((4 4 *) UL))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((2 0 *) UR) ((4 0 *) UR) ((3 3 *) UL) ((4 2 *) L) ((4 4 *) L) ((0 0 *) DR)) *
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((3 3 *) L) ((4 1 *) UR) ((1 1 *) DL) ((4 3 *) L) ((3 0 *) R) ((1 0 *) DL) ((4 0 *) R)) *
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((3 3 *) L) ((3 0 *) R) ((4 3 *) UL) ((1 0 *) DR) ((4 2 *) UR) ((4 0 *) R) ((1 1 *) DR)) *
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((3 3 *) L) ((3 0 *) R) ((4 3 *) UL) ((1 0 *) DR) ((4 2 *) UR) ((4 0 *) R) ((1 1 *) DR))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((3 3 *) L) ((3 0 *) R) ((4 3 *) UL) ((1 0 *) DR) ((4 2 *) UR) ((4 0 *) R) ((1 1 *) DR))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((3 3 *) L) ((3 0 *) R) ((4 3 *) UL) ((1 0 *) DR) ((4 2 *) UR) ((4 0 *) R) ((1 1 *) DR))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((4 3 *) UL) ((4 1 *) R) ((1 0 *) DL) ((2 2 *) L)) *
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((4 3 *) UL) ((4 1 *) R) ((1 0 *) DL) ((4 0 *) UR)) *
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((4 3 *) UL) ((4 1 *) R) ((1 0 *) DL) ((2 2 *) L)) *
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((4 3 *) UL) ((4 1 *) R) ((1 0 *) DL) ((2 2 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((4 3 *) UL) ((4 1 *) R) ((1 0 *) DL) ((2 2 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((2 0 *) UR) ((4 3 *) UL) ((4 1 *) R) ((4 4 *) L)) *
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((2 0 *) UR) ((4 3 *) UL) ((4 1 *) R) ((4 4 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((2 0 *) UR) ((4 3 *) UL) ((4 1 *) R) ((2 2 *) L)) *
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((2 0 *) UR) ((4 3 *) UL) ((4 1 *) R) ((2 2 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((2 0 *) UR) ((4 3 *) UL) ((4 1 *) R) ((2 2 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((2 0 *) UR) ((4 3 *) UL) ((4 1 *) R) ((2 2 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((3 3 *) L) ((3 0 *) R) ((2 0 *) UR) ((4 3 *) UL) ((4 1 *) R) ((2 2 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((2 0 *) UR) ((3 3 *) L) ((4 0 *) UR) ((4 2 *) L) ((2 0 *) DR) ((4 3 *) L)) *
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((3 1 *) UR) ((0 0 *) DR) ((2 0 *) UR) ((3 3 *) L) ((4 0 *) UR) ((4 2 *) L) ((2 0 *) DR) ((4 3 *) L))
+NIL
+[4]> (mutate-demo)
+Individual 0 || Fitness 3
+  (((2 2 *) UL) ((2 0 *) R) ((4 3 *) UL) ((4 0 *) UR) ((1 0 *) DR) ((3 2 *) L) ((2 0 *) DL) ((4 1 *) R) ((3 3 *) UL) ((4 4 *) L) ((0 0 *) DR))
+Individual 0 || Fitness 4
+  (((2 2 *) UL) ((2 0 *) R) ((0 0 *) DL) ((3 3 *) UL) ((4 3 *) UL) ((4 1 *) R) ((4 4 *) L) ((2 1 *) DL) ((4 1 *) R) ((3 0 *) UR))
+Individual 0 || Fitness 4
+  (((2 2 *) UL) ((2 0 *) R) ((0 0 *) DL) ((3 3 *) UL) ((4 3 *) UL) ((3 0 *) UR) ((4 1 *) R) ((2 1 *) DL) ((4 0 *) R) ((4 3 *) L))
+Individual 0 || Fitness 4
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((4 2 *) UR) ((4 0 *) R) ((1 1 *) DR) ((4 3 *) L) ((4 4 *) UL) ((4 1 *) UR) ((0 0 *) DL))
+Individual 0 || Fitness 4
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((4 2 *) UR) ((4 0 *) R) ((1 1 *) DR) ((4 2 *) UL) ((2 0 *) DL) ((4 4 *) L) ((0 0 *) DL))
+Individual 0 || Fitness 4
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((4 2 *) UR) ((4 0 *) R) ((1 1 *) DR) ((4 3 *) L) ((0 0 *) DL) ((3 0 *) R) ((4 4 *) UL))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((0 0 *) DR) ((4 3 *) UL) ((1 0 *) DR) ((4 2 *) UL) ((3 0 *) UR) ((4 0 *) R))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((0 0 *) DR) ((4 3 *) UL) ((1 0 *) DR) ((4 2 *) UL) ((3 0 *) UR) ((2 2 *) DL))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((0 0 *) DR) ((4 3 *) UL) ((1 0 *) DR) ((4 0 *) UR) ((3 1 *) R) ((4 2 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((4 1 *) UR) ((4 3 *) L) ((2 1 *) DR) ((0 0 *) DR) ((4 0 *) UR) ((2 0 *) UR))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((0 0 *) DR) ((4 1 *) UR) ((4 0 *) UR) ((1 0 *) DL) ((3 2 *) UL) ((4 3 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((4 0 *) UR) ((1 0 *) DL) ((4 2 *) UR) ((3 0 *) R) ((2 2 *) DL) ((0 0 *) DR))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((4 0 *) UR) ((1 0 *) DL) ((3 1 *) R) ((4 4 *) UL) ((4 2 *) R) ((1 1 *) DR))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((0 0 *) DL) ((4 2 *) UR) ((4 4 *) L) ((3 0 *) UR) ((2 2 *) UL) ((4 1 *) R))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((2 0 *) R) ((3 3 *) UL) ((0 0 *) DL) ((4 2 *) UR) ((4 4 *) L) ((1 1 *) DR) ((4 1 *) UR) ((3 0 *) UR))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((4 2 *) UR) ((1 0 *) DR) ((3 3 *) UL) ((2 0 *) DR) ((4 0 *) UR) ((4 2 *) L) ((4 4 *) L) ((0 0 *) DR))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((4 2 *) UR) ((1 0 *) DR) ((4 4 *) L) ((3 0 *) UR) ((4 2 *) UL) ((3 3 *) UL) ((1 0 *) DL) ((4 0 *) UR))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((4 2 *) UR) ((1 0 *) DR) ((4 4 *) L) ((3 0 *) UR) ((3 2 *) L) ((4 0 *) UR) ((2 2 *) DR) ((4 2 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((4 2 *) UR) ((3 0 *) R) ((2 2 *) DL) ((1 0 *) DR) ((3 3 *) L) ((4 1 *) UR) ((2 0 *) R) ((4 3 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((4 2 *) UR) ((3 0 *) R) ((2 2 *) DL) ((4 4 *) UL) ((4 2 *) R) ((4 0 *) R) ((1 0 *) DL) ((2 2 *) L))
+Individual 0 || Fitness 5
+  (((2 2 *) UL) ((4 2 *) UR) ((4 0 *) R) ((3 0 *) R) ((3 3 *) L) ((4 3 *) L) ((1 0 *) DL) ((3 0 *) R) ((2 2 *) DL))
+NIL
+[5]> ( maybe-mutate-demo )
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 3 *) L) ((3 0 *) R) ((2 2 *) DL) ((1 1 *) DL) ((4 1 *) UR) ((2 0 *) R) ((4 3 *) L) ((4 0 *) R))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 3 *) L) ((3 0 *) R) ((2 2 *) DL) ((2 0 *) R) ((1 1 *) DR) ((4 4 *) UL) ((4 2 *) R) ((4 0 *) R)) *
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 3 *) L) ((3 0 *) R) ((2 2 *) DL) ((2 0 *) R) ((1 1 *) DR) ((4 4 *) UL) ((4 2 *) R) ((4 0 *) R))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((3 3 *) L) ((3 0 *) R) ((2 2 *) DL) ((2 0 *) R) ((1 1 *) DR) ((4 4 *) UL) ((4 2 *) R) ((4 0 *) R))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((1 1 *) DL) ((4 4 *) L) ((3 3 *) UL) ((3 0 *) R) ((4 2 *) UR) ((1 1 *) DR)) *
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((1 1 *) DL) ((4 4 *) L) ((3 3 *) UL) ((3 0 *) R) ((4 2 *) UR) ((1 1 *) DR))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((1 1 *) DL) ((4 4 *) L) ((3 3 *) UL) ((3 0 *) R) ((4 2 *) UR) ((1 1 *) DR))
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((1 1 *) DL) ((4 4 *) L) ((3 3 *) UL) ((3 0 *) UR) ((0 0 *) DR) ((4 2 *) UL)) *
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((1 1 *) DL) ((4 4 *) L) ((3 3 *) UL) ((3 0 *) UR) ((0 0 *) DL)) *
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((1 1 *) DL) ((4 4 *) L) ((3 3 *) UL) ((3 0 *) UR) ((0 0 *) DL))
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((1 1 *) DL) ((4 4 *) L) ((3 3 *) UL) ((3 0 *) UR) ((0 0 *) DL))
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((1 1 *) DL) ((4 4 *) L) ((3 3 *) UL) ((3 0 *) UR) ((0 0 *) DR)) *
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((3 0 *) UR) ((1 0 *) DR) ((3 3 *) L) ((4 4 *) L) ((1 1 *) DR)) *
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((3 0 *) UR) ((1 0 *) DR) ((3 3 *) L) ((4 4 *) L) ((1 1 *) DR))
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((3 0 *) UR) ((1 0 *) DR) ((3 3 *) L) ((1 1 *) DR) ((4 4 *) L)) *
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((3 0 *) UR) ((1 0 *) DR) ((3 3 *) L) ((1 1 *) DR) ((4 4 *) L))
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 1 *) UR) ((4 2 *) UR) ((3 0 *) UR) ((1 0 *) DR) ((3 3 *) L) ((1 1 *) DR) ((4 4 *) L))
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 3 *) UL) ((3 0 *) R) ((2 1 *) DR) ((4 4 *) UL) ((4 2 *) R) ((1 1 *) DR) ((4 4 *) UL)) *
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 3 *) UL) ((3 0 *) R) ((2 1 *) DR) ((4 4 *) UL) ((4 2 *) R) ((1 1 *) DR) ((4 4 *) UL))
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 3 *) UL) ((3 0 *) R) ((2 1 *) DR) ((4 4 *) UL) ((4 2 *) R) ((1 1 *) DR) ((4 4 *) UL))
+Individual 0 || Fitness 5
+  (((2 0 *) UR) ((2 2 *) L) ((4 3 *) UL) ((3 0 *) R) ((2 1 *) DR) ((4 4 *) UL) ((4 2 *) R) ((1 1 *) DR) ((4 4 *) UL))
+NIL
+[6]> (bye)
+Bye.

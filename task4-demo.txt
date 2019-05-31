@@ -1,0 +1,35 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task IV Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> ( pegp '(0 0 o) )
+NIL
+[3]> ( pegp '(1 0 *) )
+T
+[4]> ( pegp '(3 2 *) )
+T
+[5]> ( neighbor '(0 0 o) 'dr )
+(1 1 *)
+[6]> ( neighbor '(0 0 o) 'dl )
+(1 0 *)
+[7]> ( jump '(2 0 *) 'ur )
+(0 0 O)
+[8]> ( jumpp '(0 0 o) 'dr )
+NIL
+[9]> ( jumpp '(2 0 *) 'ur )
+T
+[10]> ( count-pegs *board* )
+14
+[11]> ( visualize )
+-- GAME BOARD--
+    O
+   * *
+  * * *
+ * * * *
+* * * * *
+NIL
+[12]> (bye)
+Bye.

@@ -1,0 +1,113 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task VI Demo)
+;; Author: Brandon Druschel
+
+[3]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[4]> (visualize)
+-- GAME BOARD--
+    O
+   * *
+  * * *
+ * * * *
+* * * * *
+NIL
+[5]> ( move '(1 1 *) 'ul )
+NIL
+[6]> ( move '(2 2 *) 'ul )
+-- GAME BOARD--
+    *
+   * O
+  * * O
+ * * * *
+* * * * *
+T
+[7]> ( move '(4 4 *) 'ul )
+-- GAME BOARD--
+    *
+   * O
+  * * *
+ * * * O
+* * * * O
+T
+[8]> ( move '(4 4 *) 'ul )
+NIL
+[9]> ( move '(2 2 *) 'l )
+NIL
+[10]> ( move '(3 2 *) 'r )
+NIL
+[11]> ( move '(3 1 *) 'r )
+-- GAME BOARD--
+    *
+   * O
+  * * *
+ * O O *
+* * * * O
+T
+[12]> ( move '(3 3 *) 'ul )
+-- GAME BOARD--
+    *
+   * *
+  * * O
+ * O O O
+* * * * O
+T
+[13]> ( move '(0 0 *) 'dr )
+-- GAME BOARD--
+    O
+   * O
+  * * *
+ * O O O
+* * * * O
+T
+[14]> ( move '(4 2 *) 'r )
+-- GAME BOARD--
+    O
+   * O
+  * * *
+ * O O O
+* * O O *
+T
+[15]> ( move '(4 0 *) 'r )
+-- GAME BOARD--
+    O
+   * O
+  * * *
+ * O O O
+O O * O *
+T
+[16]> ( move '(2 0 *) 'dl )
+-- GAME BOARD--
+    O
+   * O
+  O * *
+ O O O O
+* O * O *
+T
+[17]> ( move '(2 2 *) 'l )
+-- GAME BOARD--
+    O
+   * O
+  * O O
+ O O O O
+* O * O *
+T
+[18]> ( move '(2 0 *) 'r )
+NIL
+[19]> ( move '(2 0 *) 'ur )
+-- GAME BOARD--
+    *
+   O O
+  O O O
+ O O O O
+* O * O *
+T
+[20]> ( move '(0 0 *) 'dl )
+NIL
+[21]> ( move '(4 0 *) 'r )
+NIL
+[22]> ( move '(4 2 *) 'ur )
+NIL
+[23]> (bye)
+Bye.

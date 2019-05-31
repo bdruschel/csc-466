@@ -1,0 +1,25 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task V Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> ( visualize )
+-- GAME BOARD--
+    O
+   * *
+  * * *
+ * * * *
+* * * * *
+NIL
+[3]> ( validate '(0 0 o) 'dr )
+NIL
+[4]> ( validate '(2 0 *) 'ur )
+T
+[5]> ( validate '(0 0 *) 'ur )
+NIL
+[6]> ( validate '(0 0 *) 'dr )
+NIL
+[7]> (bye)
+Bye.

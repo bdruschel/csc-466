@@ -1,0 +1,27 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task III Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (visualize)
+-- GAME BOARD--
+    O
+   * *
+  * * *
+ * * * *
+* * * * *
+NIL
+[3]> (setf *board* '((0 0 o)(1 0 *)(1 1 *)(2 0 *)(2 1 *)(2 2 *)(3 0 o)(3 1 o)(3 2 o)(3 3 *)(4 0 *)(4 1 o)(4 2 *)(4 3 o)(4 4 *)))
+((0 0 O) (1 0 *) (1 1 *) (2 0 *) (2 1 *) (2 2 *) (3 0 O) (3 1 O) (3 2 O) (3 3 *) (4 0 *) (4 1 O) (4 2 *) (4 3 O) (4 4 *))
+[4]> (visualize)
+-- GAME BOARD--
+    O
+   * *
+  * * *
+ O O O *
+* O * O *
+NIL
+[5]> (bye)
+Bye.

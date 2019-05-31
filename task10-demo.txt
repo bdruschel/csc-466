@@ -1,0 +1,34 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task X Demo)
+;; Author: Brandon Druschel
+
+; NOTE: 'play-full' applies random moves until the game is finished, and
+; returns the list of moves. The peg board is also printed for convenience.
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (setf x (play-full) )
+-- GAME BOARD--
+    O
+   O O
+  O O *
+ O O O O
+* O * O O
+(((2 0 *) UR) ((3 2 *) UL) ((0 0 *) DL) ((3 0 *) R) ((3 3 *) L) ((1 1 *) DR) ((4 4 *) UL)
+ ((4 2 *) R) ((2 0 *) DR) ((4 1 *) R) ((4 4 *) L))
+[3]> ( fitness x )
+3
+[4]> (setf x (play-full) )
+-- GAME BOARD--
+    O
+   O O
+  * * *
+ O O O O
+* O O O *
+(((2 0 *) UR) ((4 2 *) UL) ((1 1 *) DL) ((4 0 *) R) ((2 0 *) DL) ((4 2 *) UL) ((4 3 *) UL)
+ ((3 3 *) UL) ((0 0 *) DR))
+[5]> ( fitness x )
+5
+[6]> (bye)
+Bye.

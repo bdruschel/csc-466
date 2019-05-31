@@ -1,0 +1,29 @@
+;; PEG SOLITAIRE LEARNING MACHINE (Task XI INTERACIVE Demo)
+;; Author: Brandon Druschel
+
+[1]> (load "pegs.l")
+;; Loading file pegs.l ...
+;; Loaded file pegs.l
+T
+[2]> (setf p (play-full) )
+(((2 0 *) UR) ((4 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DL) ((4 3 *) L) ((1 1 *) DL) ((3 3 *) UL) ((3 0 *) R) ((0 0 *) DR) ((2 2 *) DL) ((4 2 *) L))
+[3]> ( setf p-i (new-individual 1 p) )
+#<INDIVIDUAL #x1A997121>
+[4]> ( individual-play p-i )
+(((2 0 *) UR) ((4 0 *) UR) ((3 2 *) UL) ((4 1 *) UR) ((1 0 *) DL) ((4 3 *) L) ((1 1 *) DL) ((3 3 *) UL) ((3 0 *) R) ((0 0 *) DR) ((2 2 *) DL) ((4 2 *) L))
+[5]> ( fitness p )
+2
+[6]> ( setf r (random-individual) )
+#<INDIVIDUAL #x1A9B5DED>
+[7]> ( display r )
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 0 *) UR) ((3 2 *) L) ((3 0 *) UR) ((2 2 *) L) ((1 0 *) DL) ((4 4 *) UL) ((1 1 *) DR) ((4 2 *) L) ((4 0 *) UR))
+NIL
+[8]> ( setf r (random-individual) )
+#<INDIVIDUAL #x1A98AB69>
+[9]> ( display r )
+Individual 0 || Fitness 4
+  (((2 0 *) UR) ((4 2 *) UL) ((4 4 *) L) ((2 2 *) DR) ((2 0 *) R) ((4 1 *) R) ((4 3 *) UL) ((1 1 *) DL) ((4 0 *) UR) ((2 0 *) DR))
+NIL
+[10]> (bye)
+Bye.
